@@ -3,7 +3,7 @@
 
 <head>
   <title>
-    Revathi Bhuvaneswari
+    Qike Yan
   </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,83 +48,8 @@
   <br/>
   <br/>
   <h1><center><i class="far fa-user"></i> About</center></h1>
-  <hr class="color-special" style="width: 75%;">
-  <br>
-  <center>
-    <script type="text/javascript">
-      window.onload = function(){
-        var conversationalForm = window.cf.ConversationalForm.startTheConversation({
-          formEl: document.getElementById("form"),
-          context: document.getElementById("cf-context"),
-          userImage: "user.png",
-          robotImage: "robot.png",
-          submitCallback: function() {
-            alert(
-              "Custom submit callback reached, removing Conversational Form, see markup of this file"
-              );
-          }
-        });
-      };
-    </script>
-    <div id="cf-context" class="dark-theme" role ="cf-context" cf-context>
-      <form id="form" cf-form>
-        <cf-robot-message cf-questions="Hi there!" />
-        <cf-robot-message cf-questions="Welcome to my Website!" />
-        <fieldset>
-          <label for="name">What's your name?</label>
-          <input required cf-questions="I'm Reva. What's your name? 😊" type="text" class="form-control" name="name" id="name" />
-        </fieldset>
-
-        <fieldset cf-questions="Nice to meet you, {previous-answer}! Would you like to hear about what I do?">
-          <label for="intro-yes">Sure 👍
-            <input type="radio" name="cfc-intro" id="intro-yes" value="yes">
-          </label>
-          <label for="intro-no">No thanks 🚫
-            <input type="radio" name="cfc-intro" id="intro-no" value="no">
-          </label>
-        </fieldset>
-
-        <cf-robot-message cf-questions="Glad to hear that! 😁" cf-conditional-cfc-intro="yes"/>
-        <fieldset cf-questions="What would you like to know?" cf-conditional-cfc-intro="yes">
-          <label for="about-edu">Education🎓
-            <input type="radio" name="cfc-about" id="about-edu" value="education" cf-conditional-cfc-intro="yes">
-          </label>
-          <label for="about-exp">Experience💼
-            <input type="radio" name="cfc-about" id="about-exp" value="experience" cf-conditional-cfc-intro="yes">
-          </label>
-          <label for="about-interest">Interests✨
-            <input type="radio" name="cfc-about" id="about-interest" value="interest" cf-conditional-cfc-intro="yes">
-          </label>
-        </fieldset>
-
-        <cf-robot-message cf-questions="I graduated Summa Cum Laude with a BS in Computer Science from Cal State East Bay 🌉" cf-conditional-cfc-about="education"/>
-        <cf-robot-message cf-questions="Currently, I'm pursuing MS in Data Analytics from Fordham University 🗽" cf-conditional-cfc-about="education"/>
-        <fieldset>
-
-        </fieldset>
-
-        <cf-robot-message cf-questions="I work as a Data Science Intern at a Real Estate Brokerage in NYC" cf-conditional-cfc-about="experience"/>
-        <cf-robot-message cf-questions="I'm also a Graduate Assistant researching Fraud Detection and Anti-Money Laundering techniques" cf-conditional-cfc-about="experience"/>
-        <cf-robot-message cf-questions="I've had additional internships in the past, and have worked on various projects that helped develop my technical skills" cf-conditional-cfc-about="experience"/>
-        <cf-robot-message cf-questions="They're listed below 😊" cf-conditional-cfc-about="experience"/>
-
-
-        <cf-robot-message cf-questions="My main interests are Data Analytics, Machine Learning and Software Engineering" cf-conditional-cfc-about="interest"/>
-        <cf-robot-message cf-questions="My focus industry is Finance/Banking" cf-conditional-cfc-about="interest"/>
-
-
-        <fieldset style="display: none;">
-          <label for="thats-all">Are you ready to submit the form?</label>
-          <select cf-input-placeholder="You can checkout my website below 😊" cf-error="Feel free to scroll down 😊" cf-questions="It was great talking to you!" name="submit-form" id="submit-form" class="form-control">
-            <option></option>
-          </select>
-        </fieldset>
-
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-    </div>
-    <!--<img src="hello.png" alt="Welcome to my Website" class="responsive-image">-->
-    <!--
+  
+<img src="hello.png" alt="Welcome to my Website" class="responsive-image">
   	<h2>
       Hello, World! I'm Reva.<br><br>
       I recently received my Bachelor of Science degree in Computer Science (Software Engineering) with a minor in IT Management from California State University, East Bay in June 2018. I was consistently on the Dean’s List during my Undergraduate Career, and graduated Summa Cum Laude (highest honors) with a GPA of 3.94/4.0.<br><br>
@@ -138,12 +63,7 @@
       	•	Research<br><br>
       In addition to my diverse technical background, my skill set also includes strong interpersonal skills acquired through teaching / mentoring experience, including previous leadership positions, and extracurricular / volunteer activities.<br><br>
       Please feel free to contact me if you’re interested in my background and/or like to know more about my work. I am always open to new connections and would love to discuss future opportunities!<br><br>
-  	</h2>
-    -->
-
-    
-
-      
+  	</h2>      
   <center>
 </div>
 
@@ -158,55 +78,40 @@
   	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Linux / Unix</a>
   	<br><br><br>
   	<a class="btn btn-default disabled" href="" style="font-size: 34px; font-family: 'Roboto Condensed', sans-serif; font-variant: small-caps"><img src="skills-icons/programming_languages.png" alt="programming_languages_icon"> Programming</a><br><br>
-  	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">C / C++</a>
+  	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">C </a>
   	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">MIPS Assembly</a>
-  	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">C#</a>
   	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Python</a>
   	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Java</a>
+	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">JavaScript</a>
   	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">R</a>
   	<br><br><br>
   	<a class="btn btn-default disabled" href="" style="font-size: 34px; font-family: 'Roboto Condensed', sans-serif; font-variant: small-caps"><img src="skills-icons/web_development.png" alt="web_development_icon">Web Development</a><br><br>
   	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">HTML5</a>
-  	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">CSS3</a>
+  	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">CSS / SCSS</a>
   	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">JavaScript</a>
-  	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">jQuery Mobile</a>
-  	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Bootstrap</a>
-  	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">WordPress</a>
+  	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">jQuery </a>
   	<br><br><br>
   	<a class="btn btn-default disabled" href="" style="font-size: 34px; font-family: 'Roboto Condensed', sans-serif; font-variant: small-caps"><img src="skills-icons/database.png" alt="database_icon">Database</a><br><br>
   	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">SQL</a>
     <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">MySQL</a>
-    <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Oracle SQL Developer</a>
-    <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Oracle APEX</a>
-  	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">MS Access</a>
+    <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">MangoDB</a>
   	<br><br><br>
-    <a class="btn btn-default disabled" href="" style="font-size: 34px; font-family: 'Roboto Condensed', sans-serif; font-variant: small-caps"><img src="skills-icons/data_science_tools.png" alt="data_science_tools_icon"> Data Science</a><br><br>
-    <!--<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">NumPy</a>
+    <a class="btn btn-default disabled" href="" style="font-size: 34px; font-family: 'Roboto Condensed', sans-serif; font-variant: small-caps"><img src="skills-icons/data_science_tools.png" alt="data_science_tools_icon"> Data Science / Machine Learning</a><br><br>
+    <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">NumPy</a>
     <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">SciPy</a>
-    <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Pandas</a>-->
+    <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Pandas</a>
     <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Matplotlib/Seaborn</a>
     <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Tableau</a>
     <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Scikit-learn</a>
-    <!--<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">XGBoost</a>-->
-    <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">TensorFlow</a>
-    <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">BeautifulSoup</a>
-    <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Selenium</a>
     <br><br><br>
   	<a class="btn btn-default disabled" href="" style="font-size: 34px; font-family: 'Roboto Condensed', sans-serif; font-variant: small-caps"><img src="skills-icons/other_tools.png" alt="other_tools_icon">Other Tools</a><br><br>
-    <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Anaconda</a>
     <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Jupyter</a>
-    <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">LaTeX</a>
-  	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Unity</a>
-  	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">LogicWorks</a>
-  	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">AutoCAD</a>
-    <a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">ServiceNow</a>
-  	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">wxWidgets</a>
   	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Git</a>
-  	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">Scratch</a>
   	<a class="btn btn-default disabled" href="" style="font-size: 25px; font-family: 'Work Sans', sans-serif;">UML</a>
   </center>
 </div>
 
+	
 <div id="projects" class="container-fluid">
   <br/>
   <h1><center><i class="fas fa-terminal"></i> Projects</center></h1>
@@ -473,7 +378,7 @@
 		<script>
 			new Date().getFullYear()>2017&&document.write(" - "+new Date().getFullYear());
 		</script>
-		Revathi Bhuvaneswari
+		Qike Yan
 	<h2>
 </footer>
 
