@@ -11,7 +11,7 @@
       	/*min-height: 500px;*/
       	overflow: hidden;
       	color: #5d1212;
-      	background-color: #c25c5c;
+      	background-color: #ff00005c;
         padding-bottom:50px;
     }
 
@@ -20,7 +20,7 @@
       	/*min-height: 500px;*/
       	overflow: hidden;
       	color: #003636;
-      	background-color: #009c93;
+      	background-color: #009c93a1;
         padding-bottom:50px;
     }
 
@@ -29,7 +29,7 @@
       	/*min-height: 500px;*/
       	overflow: hidden;
       	color: #3b0053; 
-      	background-color: #80628b;
+      	background-color: #80628ba3;
         padding-bottom:50px;
     }
 
@@ -38,7 +38,7 @@
       	/*min-height: 500px;*/
       	overflow: hidden;
       	color: #5a440d; 
-      	background-color: #e9ac4e;
+      	background-color: #e9ac4ebf;
         padding-bottom:50px;
     }
 
@@ -75,13 +75,11 @@
     	height: 2px;
     	background-image: linear-gradient(to right, rgba(0, 0, 96, 0), rgba(0, 0, 96, 0.75), rgba(0, 0, 96, 0));
     }
-
-    /*hr.projects {
-    	border: 0;
-    	height: 2px;
-    	background-image: linear-gradient(to right, rgba(255,236,219, 0), rgba(255,236,219, 0.75), rgba(255,236,219, 0));
-    }*/
-
+    .text-uppercase {
+    text-transform: uppercase!important;
+    font-weight: 700;
+    font-family: Montserrat;
+    }
     /* NAV BAR */
     .navbar-toggle {
     	border: none;
@@ -163,23 +161,6 @@
     margin-right: 15px;
     font-size: 75px;
   }
-
-  /*
-  .contact-buttons .link span {
-    display: block;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .contact-buttons .link:hover {
-    padding: 20px;
-    margin-left: -5px;
-    transform: translateX(10px) rotate(360deg);
-  }
-  */
-
   .contact-buttons .link.linkedin {
     background-color: #191717;
     color: #e9ac4e;
@@ -200,84 +181,91 @@
     color: #e9ac4e;
   }
 
-  .project-buttons {
-    text-align: center;
+ @media (min-width: 992px){
+  .container {
+    max-width: 960px;}
   }
 
-  .project-buttons .fa-youtube {
-    color: #80628b;
-    font-size: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
+  @media (min-width: 768px){
+  .container {
+    max-width: 720px;}
+  }
+  @media (min-width: 576px){
+  .container {
+    max-width: 540px;}
   }
 
-  .project-buttons .fa-github-alt {
-    color: #80628b;
-    font-size: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .project-buttons .fa-external-link-alt {
-    color: #80628b;
-    font-size: 45px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .row.projects {
-    margin: 8px -16px;
-    text-align: center;
-  }
-
-  /* Add padding BETWEEN each column */
-  .row.projects,
-  .row.projects > .column.projects {
-    padding-left: 15px;
+  .container{
+    width: 100%;
     padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
-  /* Create four equal columns that floats next to each other */
- .column.projects {
-    /*float: left;*/
+  .img-fluid{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    display: block!important;
+    margin-bottom: 3rem!important;
+    margin-right: auto !important;
+    margin-left: auto ! important;
+    display:block !important;
+   }
+  hr.star-light {
+    max-width: 15rem;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-top: solid .25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+  hr.star-light:after {
+    color: #fff;
+    background-color: red;
+    position: relative;
+    top: -.8em;
     display: inline-block;
-    width: 24%;
-  }
+    padding: 0 .25em;
+    content: '\f005';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2em;
+   }
+::after, ::before {
+    box-sizing: border-box;
+}
 
-  /* Create three equal columns that floats next to each other */
-  /*.column.skills {
-    display: inline-block;
-    width: 33.33%;
-  }*/
+.accordion {
+  background-color: #f4433638;
+  color: #5d1212;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
 
-  /* Content */
- .content.projects {
-    background-color: #191717;
-    padding: 20px;
-  }
+.activesection, .accordion:hover {
+  background-color: #e91e6357; 
+}
 
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media (max-width: 900px) {
-    .column.projects {
-      width: 49%;
-    }
-    /*.column.skills {
-      width: 50%;
-    }*/
-  }
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color:#ff000000;
+  overflow: hidden;
+}
 
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    .column.projects {
-      width: 100%;
-    }
-    /*.column.skills {
-      width: 100%;
-    }*/
-  }
-  
   /* Style the back-to-top floating button */
   .sf-back-to-top {
     background-color: #521818; /* button color */
