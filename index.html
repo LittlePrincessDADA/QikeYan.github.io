@@ -51,22 +51,34 @@
   <h1><center><i class="far fa-user"></i> About</center></h1>
   
 <img src="hello.png" alt="Welcome to my Website" class="responsive-image">
-  	<h2>
-      Hello, World! I'm Qike.<br><br>
-      I am a master student from computer science major of Fordham University in New York. I was enrolled in E-commerce and Engineering in Queen Marry University of London for my collage in 2013.	
-      I will graduate in May 2019 with degree of master of science with supposed GPA of 3.89/4.0.
-      I have some industry experience through internships, and a strong technical skills by working on a wide range of academic and personal projects. My main interests are Software Engineering, Machine Learning and Web Developer.		
-      I am proficient in:<br><br>
-      	•	Programming (JavaScript, Java, Python)<br>
-      	•	Testing and Quality Assurance: Unit Testing, Automation Testing<br>
-      	•	Development: Web & Mobile Entities (HTML/CSS/JavaScript, JQuery)<br>
-      	•	Data Analysis/Visualization/Management (Python, R, SQL, Tableau)<br>
-		<br>
- 
-      In addition to my diverse technical background, my skill set also includes strong interpersonal skills acquired through teaching / mentoring experience, including previous leadership positions, and extracurricular / volunteer activities.<br><br>
-      Please feel free to contact me if you’re interested in my background and/or like to know more about my work. I am always open to new connections and would love to discuss future opportunities!<br><br>
-  	</h2>      
-  <center>
+  	
+ <div class="container">
+  	<img class= "img-fluid" src="./nameLogo.png">
+
+    <h1 class="text-uppercase "><center> WELCOME TO MY WEBSITE</center></h1>
+    <hr class="star-light">
+    	
+    </hr>
+
+    <h1><center> Web Developer - Software Engineer - Full-Stack Engineer</center></h>
+  </div>
+  <button class="accordion">Intrudcation</button>
+   <div class="panel">
+	  <p>I am a master student from computer science major of Fordham University in New York.</p>
+	</div>
+
+  <button class="accordion">Education</button>
+	<div class="panel">
+	  <p>I was enrolled in E-commerce and Engineering in Queen Marry University of London for my collage in 2013. I will graduate in May 2019 with degree of master of science with supposed GPA of 3.89/4.0 from Fordham.</p>
+	</div>
+
+  <button class="accordion">Experience</button>
+	<div class="panel">
+	  <p>I have some industry experience through internships, and a strong technical skills by working on a wide range of academic and personal projects. My main interests are Software Engineering, Machine Learning and Web Developer.	I am proficient in: •	Programming (JavaScript, Java, Python)
+• Testing and Quality Assurance: Unit Testing, Automation Testing • Development: Web & Mobile Entities (HTML/CSS/JavaScript, JQuery) • Data Analysis/Visualization/Management (Python, R, SQL, Tableau)</p>
+	</div>
+
+</div>
 </div>
 
 <div id="skills" class="container-fluid">
@@ -290,7 +302,20 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("activesection");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 </script>
 </body>
   </html>
