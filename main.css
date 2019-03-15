@@ -61,25 +61,8 @@
       	letter-spacing: 2px;
       	margin: 0 0 23px 0;
     }
-    h3 {
-	 font-family: 'Abel', sans-serif; 
-	 font-weight: bold;
-	 font-size: 42px;
-      	 margin: 0 0 23px 0;   
-   }
-  @media (max-width: 992px){
-  .columntable h3 i{
-    font-size:42px;}
-  }
-
-  @media (max-width: 768px){
-  .columntable h3 i {
-    font-size:30px;}
-  }
-  @media (max-width: 576px){
-  .columntable h3 i{
-    font-size:20px;}
-  }
+    
+  
   p {
       	/*font-family: 'EB Garamond', serif;*/
         font-family: 'Raleway', sans-serif;
@@ -246,7 +229,7 @@
 
   hr.star-light:after {
     color: #fff;
-    background-color: red;
+    background-color: #ff00005c;
     position: relative;
     top: -.8em;
     display: inline-block;
@@ -637,13 +620,24 @@
     font-size: 70px;
     cursor: pointer;
   }
+ @media (max-width: 992px){
+  .columntable h1 {
+    font-size:40px;}
+  }
+
+  @media (max-width: 768px){
+  .columntable h1 {
+    font-size:30px;}
+  }
+
+  @media (max-width: 576px){
+  .columntable h1 {
+    font-size:18px;}
+  }
 
 #cf-context { 
   width: 95vw; 
   height: 75vh;
 }
-#form {
-  height: 0px;
-  overflow: hidden;
-}
+
 
