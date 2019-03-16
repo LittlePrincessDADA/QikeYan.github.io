@@ -605,7 +605,6 @@
   }
   .columntable {
     float: left;
-    width: 32%;
     padding: 50px;
     text-align: center;
     font-size: 25px;
@@ -622,11 +621,13 @@
   }
  @media (max-width: 992px){
   .columntable h1 {
+    width:32%;
     font-size:40px;}
   }
 
   @media (max-width: 768px){
   .columntable h1 {
+    width: 32%;
     font-size:25px;}
   }
 
