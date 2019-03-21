@@ -242,110 +242,52 @@
      <br/>
      <p>Code detail Please check here: <a href="https://github.com/QikeYan" class="link github" target="_blank"><span class="fab fa-github"></span></a></p> 
 
-	  <div class="slideshow-container">
+	<div class="header" id="myHeader">
+	  <h1>Image Grid</h1>
+	  <p>Click on the buttons to change the grid view.</p>
+	  <button class="btn" onclick="one()">1</button>
+	  <button class="btn activegrid" onclick="two()">2</button>
+	  <button class="btn" onclick="four()">4</button>
+	</div>
 
-	    <div class="mySlides">
-	      <div class="numbertext">1 / 14</div>
-	      <center><img src="./AndroidApp/1.jpg" style="width:50%"></center>
-	      <div class="text">Create Post Page</div>
-	    </div>
-
-	    <div class="mySlides">
-	      <div class="numbertext">2 / 14</div>
-	      <center><img src="./AndroidApp/2.png" style="width:50%"></center>
-	      <div class="text">Post Detail Page</div>
-	    </div>
-
-	    <div class="mySlides">
-	      <div class="numbertext">3 / 14</div>
-	      <center><img src="./AndroidApp/3.png" style="width:50%"></center>
-	      <div class="text">Post List Page</div>
-	    </div>
-		  
-	    <div class="mySlides">
-	      <div class="numbertext">4 / 14</div>
-	      <center><img src="./AndroidApp/4.png" style="width:50%"></center>
-	      <div class="text">Comment List Page</div>
-	    </div>
-		  
-	    <div class="mySlides">
-	      <div class="numbertext">5 / 14</div>
-	      <center><img src="./AndroidApp/5.png" style="width:50%"></center>
-	      <div class="text">Category List Page</div>
-	    </div>
-		  
-	    <div class="mySlides">
-	      <div class="numbertext">6 / 14</div>
-	      <center><img src="./AndroidApp/2.1.png" style="width:50%"></center>
-	      <div class="text">Login Page</div>
-	    </div>
-		  
-	   <div class="mySlides">
-	      <div class="numbertext">7 / 14</div>
-	      <center><img src="./AndroidApp/6.png" style="width:50%"></center>
-	      <div class="text">Login Page</div>
-	    </div>
-		  
-           <div class="mySlides">
-	      <div class="numbertext">8 / 14</div>
-	      <center><img src="./AndroidApp/7.png" style="width:50%"></center>
-	      <div class="text">Login Page</div>
-	    </div>
-		  
-	   <div class="mySlides">
-	      <div class="numbertext">9 / 14</div>
-	      <center><img src="./AndroidApp/8.png" style="width:50%"></center>
-	      <div class="text">Login Page</div>
-	    </div>
-	  <div class="mySlides">
-	      <div class="numbertext">10 / 14</div>
-	      <center><img src="./AndroidApp/9.png" style="width:50%"></center>
-	      <div class="text">Login Page</div>
-	   </div>
-	   <div class="mySlides">
-	      <div class="numbertext">11 / 14</div>
-	      <center><img src="./AndroidApp/10.1.png" style="width:50%"></center>
-	      <div class="text">Login Page</div>
-	    </div>
-		  
-	   <div class="mySlides">
-	      <div class="numbertext">12 / 14</div>
-	      <center><img src="./AndroidApp/11.png" style="width:50%"></center>
-	      <div class="text">Login Page</div>
-	    </div>
-		  
-            <div class="mySlides">
-	      <div class="numbertext">13 / 14</div>
-	      <center><img src="./AndroidApp/12.png" style="width:50%"></center>
-	      <div class="text">Login Page</div>
-	    </div>
-		  <div class="mySlides">
-	      <div class="numbertext">14 / 14</div>
-	      <center><img src="./AndroidApp/13.png" style="width:50%"></center>
-	      <div class="text">Login Page</div>
-	    </div>
-		  
-	    <a class="prev" style = "color: #3b005342;" onclick="plusSlides(-1)">&#10094;</a>
-	    <a class="next" style = "color: #3b005342;" onclick="plusSlides(1)">&#10095;</a>
+	<!-- Photo Grid -->
+	<div class="row"> 
+	  <div class="column">
+	    <img src="./AndroidApp/12.png" style="width:50%">
+	    <img src="./AndroidApp/13.png" style="width:50%">
+	    <img src="./AndroidApp/2.png" style="width:50%">
+	    <img src="./AndroidApp/1.jpg" style="width:50%">
+	    <img src="./AndroidApp/3.png" style="width:50%">
+	    <img src="./AndroidApp/4.png" style="width:50%">
+	    <img src="./AndroidApp/1.jpg" style="width:50%">
 	  </div>
-	  <br>
-	    <div style="text-align:center">
-	      <span class="dot" onclick="currentSlide(1)"></span> 
-	      <span class="dot" onclick="currentSlide(2)"></span> 
-	      <span class="dot" onclick="currentSlide(3)"></span> 
-	      <span class="dot" onclick="currentSlide(4)"></span> 
-	      <span class="dot" onclick="currentSlide(5)"></span> 
-	      <span class="dot" onclick="currentSlide(6)"></span> 
-	      <span class="dot" onclick="currentSlide(7)"></span> 
-	      <span class="dot" onclick="currentSlide(8)"></span> 
-	      <span class="dot" onclick="currentSlide(9)"></span> 
-	      <span class="dot" onclick="currentSlide(10)"></span> 
-	      <span class="dot" onclick="currentSlide(11)"></span> 
-	      <span class="dot" onclick="currentSlide(12)"></span> 
-	      <span class="dot" onclick="currentSlide(13)"></span> 
-	      <span class="dot" onclick="currentSlide(14)"></span> 	      	    
-	    </div>	
-</div>
+	  <div class="column">
+	    <img src="./AndroidApp/5.png" style="width:50%">
+	    <img src="./AndroidApp/6.png" style="width:50%">
+	    <img src="./AndroidApp/7.png" style="width:50%">
+	    <img src="./AndroidApp/8.png" style="width:50%">
+	    <img src="./AndroidApp/9.png" style="width:50%">
+	    <img src="./AndroidApp/10.1.png" style="width:50%">
+	  </div>  
+	  <div class="column">
+	    <img src="./AndroidApp/11.png" style="width:50%">
+	    <img src="./AndroidApp/12.png" style="width:50%">
+	    <img src="./AndroidApp/12.png" style="width:50%">
+	    <img src="./AndroidApp/1.jpg" style="width:50%">
+	    <img src="./AndroidApp/12.png" style="width:50%">
+	    <img src="./AndroidApp/12.png" style="width:50%">
+	    <img src="./AndroidApp/1.jpg" style="width:50%">
+	  </div>
+	  <div class="column">
+	    <img src="./AndroidApp/12.png" style="width:50%">
+	    <img src="./AndroidApp/12.png" style="width:50%">
+	    <img src="./AndroidApp/12.png" style="width:50%">
+	    <img src="./AndroidApp/12.png" style="width:50%">
+	    <img src="./AndroidApp/12.png" style="width:50%">
+	    <img src="./AndroidApp/12.png" style="width:50%">
+	  </div>
+	</div> 
+
 	
 </div>
 
@@ -423,6 +365,46 @@ for (i = 0; i < acc.length; i++) {
     } else {
       panel.style.display = "block";
     }
+  });
+}
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var j;
+
+// Full-width images
+function one() {
+    for (j = 0; j < elements.length; j++) {
+    elements[j].style.msFlex = "100%";  // IE10
+    elements[j].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (j = 0; j < elements.length; j++) {
+    elements[j].style.msFlex = "50%";  // IE10
+    elements[j].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (j = 0; j < elements.length; j++) {
+    elements[j].style.msFlex = "25%";  // IE10
+    elements[j].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("activegrid");
+    current[0].className = current[0].className.replace(" activegrid", "");
+    this.className += " activegrid";
   });
 }
 </script>
