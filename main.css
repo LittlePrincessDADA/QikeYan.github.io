@@ -227,7 +227,7 @@
     margin-right: auto;
    }
 
-  hr.star-light:before {
+  hr.star-light:after {
     color: #fff;
     background-color: #ff00005c;
     position: relative;
@@ -239,7 +239,9 @@
     font-weight: 900;
     font-size: 2em;
    }
-
+::after, ::before {
+    box-sizing: border-box;
+}
 
 .accordion {
   background-color: #f4433638;
