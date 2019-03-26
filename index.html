@@ -136,7 +136,7 @@
 
 	<div class="rowtable">
 
-	  <div class="columntable" onclick="openTab('b1');" style="background:#3b005342; float: left;width: 32%; cursor: pointer;margin-left: 10px;height: 400px;">
+	  <div class="columntable" onclick="openNewWindow('myModal1');" style="background:#3b005342; float: left;width: 32%; cursor: pointer;margin-left: 10px;height: 400px;">
 	    
 	     <br/>
 	    <h1> <center>Java Script Web development </center></h1>
@@ -144,7 +144,7 @@
 	    <center><i class="fas fa-search-plus fa-3x"> </i></center>
 	  </div>
 
-	  <div class="columntable" onclick="openTab('b2');" style="background:#3b005342;float: left;width: 32%; cursor: pointer;margin-left: 10px;height: 400px;">
+	  <div class="columntable" onclick="openNewWindow('myModal2');" style="background:#3b005342;float: left;width: 32%; cursor: pointer;margin-left: 10px;height: 400px;">
 	    <br/>	     
 	    <h1> <center> Management System Implementation </center></h1>
 	    <br/>
@@ -152,7 +152,7 @@
 
 	  </div>
 
-	  <div class="columntable" onclick="openTab('b3');" style="background:#3b005342;float: left;width: 32%; cursor: pointer;margin-left: 10px;height: 400px;">
+	  <div class="columntable" onclick="openNewWindow('myModal3');" style="background:#3b005342;float: left;width: 32%; cursor: pointer;margin-left: 10px;height: 400px;">
 	    <br/>	    
 	    <h1> <center> Android Application Implementaion </center></h1>
 	    <br/>
@@ -160,7 +160,7 @@
 
 	  </div>
 		
-	 <div class="columntable" onclick="openTab('b4');" style="background:#3b005342;float: left;width: 32%; cursor: pointer;margin-left: 10px;height: 400px;">
+	 <div class="columntable" onclick="openNewWindow('myModal4');" style="background:#3b005342;float: left;width: 32%; cursor: pointer;margin-left: 10px;height: 400px;">
 	    <br/>	    
 	    <h1> <center> Machine Learning Project </center></h1>
 	    <br/>
@@ -168,7 +168,7 @@
 
 	  </div>
 		
-	 <div class="columntable" onclick="openTab('b5');" style="background:#3b005342;float: left;width: 32%; cursor: pointer;margin-left: 10px;height: 400px;">
+	 <div class="columntable" onclick="openNewWindow('myModal5');" style="background:#3b005342;float: left;width: 32%; cursor: pointer;margin-left: 10px;height: 400px;">
 	    <br/>	    
 	    <h1> <center> Stock Searching System Python Project </center></h1>
 	    <br/>
@@ -176,7 +176,7 @@
 
 	  </div>
 		
-	 <div class="columntable" onclick="openTab('b6');" style="background:#3b005342;float: left;width: 32%; cursor: pointer;margin-left: 10px;height: 400px;">
+	 <div class="columntable" onclick="openNewWindow('myModal6');" style="background:#3b005342;float: left;width: 32%; cursor: pointer;margin-left: 10px;height: 400px;">
 	    <br/>	    
 	    <h1> <center> Big Data Programming </center></h1>
 	    <br/>
@@ -186,85 +186,92 @@
 	</div> 
 
 	<!-- Full-width columns: (hidden by default) -->
-	<div id="b1" class="containerTab" style="display:none;background:white; margin-top:10px; margin-left: 10px; margin-right: 10px; padding: 20px;">
-	  <span onclick="this.parentElement.style.display='none'" class="closeitembtn" style="float: right;color: black; font-size: 35px; cursor: pointer;" >&times;</span>
-	  <h2> Node.js Web Development (Full-Stack Project)</h2>
-	  <p> This Websit based on JavaScript project is my personal idea and design. The front-end is based on HTML with partial JQuery, Js and CSS. The back-end server is based on Node.js</p>
-	  <p> 1.Students can get first-hand information of what they want to know from people who already know that, such as how's school's dormitory or how's the feeling of being one of Fordham member or how's the food in our kitchen, some life questions and course questions can be posted and published. </p>
-	  <p> 2.Students can share their own resources with others who are registered in our website. The resources can be anything without any limitation (of course, in the legal range) such as course notes, course summary, some solutions based on question, some preparation guide for any kind of exams including FPA or some other difficult examinations.</p> 
-          <p> 3.Students can post renting information to find others to live together, which is a big problem when we first living outside from home.</p>
-          <p> 4.Someone who graduated from school could share their experience of hunting job including how to pass the interview or what should prepare before interview.</p>
-          <p> 5.Students can also come up with some great theme to discuss with people who are interested in.</p>
-         
-	  <br/>
-	  <p>Code detail Please check here: <a href="https://github.com/QikeYan" class="link github" target="_blank"><span class="fab fa-github"></span></a></p> 
+	<div id="myModal1" class="modal" >
+	   <div class="modal-content">
+	     <span class="close">&times;</span>
+		  <h2> Node.js Web Development (Full-Stack Project)</h2>
+		  <p> This Websit based on JavaScript project is my personal idea and design. The front-end is based on HTML with partial JQuery, Js and CSS. The back-end server is based on Node.js</p>
+		  <p> 1.Students can get first-hand information of what they want to know from people who already know that, such as how's school's dormitory or how's the feeling of being one of Fordham member or how's the food in our kitchen, some life questions and course questions can be posted and published. </p>
+		  <p> 2.Students can share their own resources with others who are registered in our website. The resources can be anything without any limitation (of course, in the legal range) such as course notes, course summary, some solutions based on question, some preparation guide for any kind of exams including FPA or some other difficult examinations.</p> 
+		  <p> 3.Students can post renting information to find others to live together, which is a big problem when we first living outside from home.</p>
+		  <p> 4.Someone who graduated from school could share their experience of hunting job including how to pass the interview or what should prepare before interview.</p>
+		  <p> 5.Students can also come up with some great theme to discuss with people who are interested in.</p>
 
-	  <div class="slideshow-container">
+		  <br/>
+	  	 <p>Code detail Please check here: <a href="https://github.com/QikeYan" class="link github" target="_blank"><span class="fab fa-github"></span></a></p> 
 
-	    <div class="mySlides">
-	      <div class="numbertext">1 / 6</div>
-	      <img src="./AddPost.png" style="width:100%">
-	      <div class="text">Create Post Page</div>
-	    </div>
+		  <div class="slideshow-container">
 
-	    <div class="mySlides">
-	      <div class="numbertext">2 / 6</div>
-	      <img src="./PostDetail.png" style="width:100%">
-	      <div class="text">Post Detail Page</div>
-	    </div>
+		    <div class="mySlides">
+		      <div class="numbertext">1 / 6</div>
+		      <img src="./AddPost.png" style="width:100%">
+		      <div class="text">Create Post Page</div>
+		    </div>
 
-	    <div class="mySlides">
-	      <div class="numbertext">3 / 6</div>
-	      <img src="./PostsList.png" style="width:100%">
-	      <div class="text">Post List Page</div>
-	    </div>
-		  
-	    <div class="mySlides">
-	      <div class="numbertext">4 / 6</div>
-	      <img src="./CommentList.png" style="width:100%">
-	      <div class="text">Comment List Page</div>
-	    </div>
-		  
-	    <div class="mySlides">
-	      <div class="numbertext">5 / 6</div>
-	      <img src="./CategoryList.png" style="width:100%">
-	      <div class="text">Category List Page</div>
-	    </div>
-		  
-	    <div class="mySlides">
-	      <div class="numbertext">6 / 6</div>
-	      <img src="./Login:Signin.png" style="width:100%">
-	      <div class="text">Login Page</div>
-	    </div>
+		    <div class="mySlides">
+		      <div class="numbertext">2 / 6</div>
+		      <img src="./PostDetail.png" style="width:100%">
+		      <div class="text">Post Detail Page</div>
+		    </div>
 
-	    <a class="prev" style = "color: #3b005342;" onclick="plusSlides(-1)">&#10094;</a>
-	    <a class="next" style = "color: #3b005342;" onclick="plusSlides(1)">&#10095;</a>
-	  </div>
-	  <br>
-	    <div style="text-align:center">
-	      <span class="dot" onclick="currentSlide(1)"></span> 
-	      <span class="dot" onclick="currentSlide(2)"></span> 
-	      <span class="dot" onclick="currentSlide(3)"></span> 
-	      <span class="dot" onclick="currentSlide(4)"></span> 
-	      <span class="dot" onclick="currentSlide(5)"></span> 
-	      <span class="dot" onclick="currentSlide(6)"></span> 
-	    </div>
+		    <div class="mySlides">
+		      <div class="numbertext">3 / 6</div>
+		      <img src="./PostsList.png" style="width:100%">
+		      <div class="text">Post List Page</div>
+		    </div>
 
+		    <div class="mySlides">
+		      <div class="numbertext">4 / 6</div>
+		      <img src="./CommentList.png" style="width:100%">
+		      <div class="text">Comment List Page</div>
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">5 / 6</div>
+		      <img src="./CategoryList.png" style="width:100%">
+		      <div class="text">Category List Page</div>
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">6 / 6</div>
+		      <img src="./Login:Signin.png" style="width:100%">
+		      <div class="text">Login Page</div>
+		    </div>
+
+		    <a class="prev" style = "color: #3b005342;" onclick="plusSlides(-1)">&#10094;</a>
+		    <a class="next" style = "color: #3b005342;" onclick="plusSlides(1)">&#10095;</a>
+		  </div>
+		  <br>
+		    <div style="text-align:center">
+		      <span class="dot" onclick="currentSlide(1)"></span> 
+		      <span class="dot" onclick="currentSlide(2)"></span> 
+		      <span class="dot" onclick="currentSlide(3)"></span> 
+		      <span class="dot" onclick="currentSlide(4)"></span> 
+		      <span class="dot" onclick="currentSlide(5)"></span> 
+		      <span class="dot" onclick="currentSlide(6)"></span> 
+		    </div>
+	 </div>
 	</div>
-<div id="b2" class="containerTab" style="display:none;background:white; margin-top:10px; margin-left: 10px; margin-right: 10px; padding: 20px;">
-  <span onclick="this.parentElement.style.display='none'" class="closeitembtn" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
-  <h2>Management System Design and Implementation Based on Java</h2>
-  <p> Adding Soon!!!!!!</p>
+	
+	
+	
+<div id="myModal2" class="modal">
+	<div class="modal-content">
+	  <span class="close">&times;</span>
+	  <h2>Management System Design and Implementation Based on Java</h2>
+	  <p> Adding Soon!!!!!!</p>
+	</div>
 </div>
 
-<div id="b3" class="containerTab" style="display:none;background:white; margin-top:10px; margin-left: 10px; margin-right: 10px; padding: 20px;">
-  <span onclick="this.parentElement.style.display='none'" class="closeitembtn" style="float: right;color: black;font-size: 35px;cursor: pointer;" >&times;</span>
-  <h2>Android Application Design and Implementation</h2>	
-     <p>Developed an application to visualize energy consumption of each EV charging station. </p>
-     <p>Involved in Server building, client-side design and implementation and data process parts including data collection, data cleaning, data transform and data storage.</p>
-     <p>Here are some screenshots of this Android Application. Four main functions: Comsuption Overview/ Station Overview/ Account Mangagement/ Operation Mangament</p>
-     <br/>
-     <p>Code detail Please check here: <a href="https://github.com/QikeYan" class="link github" target="_blank"><span class="fab fa-github"></span></a></p> 
+<div id="myModal3" class="modal" >
+	<div class="modal-content">
+	  <span class="close">&times;</span>
+	  <h2>Android Application Design and Implementation</h2>	
+	     <p>Developed an application to visualize energy consumption of each EV charging station. </p>
+	     <p>Involved in Server building, client-side design and implementation and data process parts including data collection, data cleaning, data transform and data storage.</p>
+	     <p>Here are some screenshots of this Android Application. Four main functions: Comsuption Overview/ Station Overview/ Account Mangagement/ Operation Mangament</p>
+	     <br/>
+	     <p>Code detail Please check here: <a href="https://github.com/QikeYan" class="link github" target="_blank"><span class="fab fa-github"></span></a></p> 
 
 	<div class="header" id="myHeader">
 	  <h1>Image Grid</h1>
@@ -276,36 +283,60 @@
 
 	<!-- Photo Grid -->
 	<div class="row"> 
-	  <div class="column">
-	    <center><img src="./AndroidApp/12.png" style="width:50%"></center>
-	    <center><img src="./AndroidApp/13.png" style="width:50%"></center>
+	  <div class="column">	
 	    <center><img src="./AndroidApp/2.png" style="width:50%"></center>
 	    <center><img src="./AndroidApp/1.jpg" style="width:50%"></center>
 	    <center><img src="./AndroidApp/3.png" style="width:50%"></center>
 	    <center><img src="./AndroidApp/4.png" style="width:50%"></center>
-	    <center><img src="./AndroidApp/1.jpg" style="width:50%"></center>
+	 
 	  </div>
 	  <div class="column">
 	    <center><img src="./AndroidApp/5.png" style="width:50%"></center>
 	    <center><img src="./AndroidApp/6.png" style="width:50%"></center>
 	    <center><img src="./AndroidApp/7.png" style="width:50%"></center>
 	    <center><img src="./AndroidApp/8.png" style="width:50%"></center>
-	    <center><img src="./AndroidApp/9.png" style="width:50%"></center>
-	    <center><img src="./AndroidApp/10.1.png" style="width:50%"></center>
+	    
 	  </div>  
 	  <div class="column">
+	    <center><img src="./AndroidApp/9.png" style="width:50%"></center>
+	    <center><img src="./AndroidApp/10.1.png" style="width:50%"></center>
 	    <center><img src="./AndroidApp/11.png" style="width:50%"></center>
 	    <center><img src="./AndroidApp/12.png" style="width:50%"></center>
+	    <center><img src="./AndroidApp/13.png" style="width:50%"></center>
 	    	   
 	  </div>
 	 
 	</div> 
 
+    </div>
+   </div>
 	
-     </div>
+	<div id="myModal4" class="modal">
+	<div class="modal-content">
+	  <span class="close">&times;</span>
+	  <h2>Machine Learning Projects</h2>
+	  <p> Adding Soon!!!!!!</p>
+	</div>
+	</div>
 	
+	<div id="myModal5" class="modal">
+	<div class="modal-content">
+	  <span class="close">&times;</span>
+	  <h2>Stock Searching Python Project</h2>
+	  <p> Adding Soon!!!!!!</p>
+	</div>
+	</div>
 	
+	<div id="myModal6" class="modal">
+	<div class="modal-content">
+	  <span class="close">&times;</span>
+	  <h2>Big Data Programming Project</h2>
+	  <p> Adding Soon!!!!!!</p>
+	</div>
+      </div>
+		
 </div>
+
 
 <div id="connect" class="container-fluid">
   <br/>
@@ -332,13 +363,24 @@
 	<h2>
 </footer>
 <script>
-function openTab(tabName) {
-  var i, x;
-  x = document.getElementsByClassName("containerTab");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  document.getElementById(tabName).style.display = "block";
+function openNewWindow(tabName) {
+      // Get the modal
+    var modal = document.getElementById(tabName); 
+    
+    modal.style.display = "block";
+    
+     var span = document.getElementsByClassName("close");
+     for (i = 0; i < span.length; i++) {
+         span[i].onclick = function() {
+        modal.style.display = "none";
+      }
+     }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
 }
 
 
