@@ -1,0 +1,291 @@
+ 
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Qike's Blog</title>
+  <link rel="stylesheet" href="./res/layui/css/layui.css">
+  <link rel="stylesheet" href="./res/css/global.css">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .Oneline{
+      background-color: white;
+      padding: 18px;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    .flip-card {
+      display: inline-block;
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+ 
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+
+    .flip-card-back {
+
+      background-color: #2980b9;
+      color: white;
+      transform: rotateY(180deg);
+
+    }
+    .dropdown-content {
+    margin-top: 4.5px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: black;
+  }
+  .dropdown{
+    height: 100%;
+   }
+  .dropdown-content .header {
+    background: #404553;
+    padding: 16px;
+    color: white;
+  }
+ 
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .notepadding{
+    padding: 15px 15px 15px 75px;
+  }
+</style>
+</head>
+<body>
+
+<div class="fly-header layui-bg-black">
+  <div class="layui-container">
+    <div class="dropdown">
+    <img src="./res/images/nameLogo.png" style="width: 50px;height: 50px; float: right; margin-top: 5px;" >
+        <div class="dropdown-content">
+          <div class="header">
+            <h2>Hey guys! My name is Qike Yan </h2>
+          </div>  
+          <div>
+            <p> </p>
+            <p> </p> 
+          </div>
+               
+        </div>
+    </div>
+    <br>
+    <h1> Qike's NoteBook Share </h1>
+
+  </div>
+</div>
+
+<div class="fly-panel fly-column">
+  <div class="layui-container">
+    <ul class="layui-clear">
+      <li class="layui-hide-xs layui-this"><a href="./index.html">Homepage</a></li> 
+      <li><a href="./InterviewPreparation.html">Interview Preparation</a></li> 
+      <li><a href="./DailyNoteSummary.html">Daily Note Summary</a></li> 
+      <li><a href="./PersonalNote.html">Personal note</a></li> 
+      <li><a href="./QuestionList.html">Questions Category</a></li> 
+   
+      <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><span class="fly-mid"></span></li> 
+     
+    </ul> 
+  </div>
+</div>
+
+<div class="layui-container">
+  <div class="layui-row layui-col-space15">
+    <div class="layui-col-md8 content detail">
+      <div class="fly-panel detail-box">
+        <h1>Graph theory Summary</h1>
+        <div class="fly-detail-info">
+          <span class="layui-badge layui-bg-red">Great post</span>
+          
+         
+          <span class="fly-list-nums"> 
+            <a href="#comment"><i class="iconfont" title="回答">&#xe60c;</i> 66</a>
+            <i class="iconfont" >&#xe60b;</i> <span id="busuanzi_container_site_pv">
+          </span>
+        </div>
+        <div class="detail-about">
+          <a class="fly-avatar" href="../user/home.html">
+            <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg" alt="贤心">
+          </a>
+          <div class="fly-detail-user">
+            <a href="../user/home.html" class="fly-link">
+              <cite>Author</cite>
+            </a>
+            <span>2017-11-30</span>
+          </div>
+          <div class="detail-hits" id="LAY_jieAdmin" data-id="123">
+            <span style="padding-right: 10px; color: #FF7200">Thumb Up：60</span>  
+          </div>
+        </div>
+        <div class="detail-body photos">
+          <h2>
+            How to detect an cycle in graph ?
+          </h2>
+          <p>
+            When we start from the source node, we mark it as visiting. Then go for checking its neighbors which are not visited. If anyone is visiting=> detected cycle. Then do the recursion step on them. All done mark current node as visited and return true.
+            <br>here we use number 0 represent the initial state; number 1 represent visiting state; number 2 represent already visited state.
+            <br>
+      
+
+          </p>
+
+          <p>Core Code：</p>
+          <pre>          
+          Public boolean cycle(Map<> graph, int source, int end,int[] colors){   
+              Colors[source] = 1;
+              for(int next: graph.get(source)){
+                if(colors[next] == 1) return false;
+                if(colors[next]==0 && !cycle(graph,next,end,colors))return false;
+              }
+              Colors[source] = 2;
+              Return true; 
+          }
+ </pre>
+          
+        </div>
+      </div>
+
+      <div class="fly-panel detail-box" id="flyReply">
+        <fieldset class="layui-elem-field layui-field-title" style="text-align: center;">
+          <legend>Response</legend>
+        </fieldset>
+
+        <ul class="jieda" id="jieda">
+          <li data-id="111" class="jieda-daan">
+           
+          </li>
+          
+          <li data-id="111">
+            
+          </li>
+          
+        </ul>
+        
+        <div class="layui-form layui-form-pane">
+          <form action="/jie/reply/" method="post">
+            <div class="layui-form-item layui-form-text">
+              <a name="comment"></a>
+              <div class="layui-input-block">
+                <textarea id="L_content" name="content" required lay-verify="required" placeholder="Typing to leave comment"  class="layui-textarea fly-editor" style="height: 150px;"></textarea>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <input type="hidden" name="jid" value="123">
+              <button class="layui-btn" lay-filter="*" lay-submit>submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+        <div class="layui-col-md4">
+
+      <div class="fly-panel">
+        <h3 class="fly-panel-title">Hot Question List</h3>
+        <ul class="fly-panel-main fly-list-static">
+          <li>
+            <a href="" target="_blank">Two Sum Question</a>
+          </li>
+          <li>
+            <a href="" target="_blank">
+              Three Sum Question
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank">Four Sum Question</a>
+          </li>
+          <li>
+            <a href="" target="_blank">
+              Find the LCA in Tree
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+        </ul>
+      </div>
+    
+      <div class="fly-panel fly-link">
+        <h3 class="fly-panel-title">Friend Connect/LinkedIn Connect</h3>
+        <dl class="fly-panel-main">
+          <dd><a href="https://github.com/QikeYan" target="_blank">GitHub</a><dd>
+          <dd><a href="https://www.linkedin.com/in/qike-yan-27353a163/" target="_blank">LinkedIn</a><dd>
+          <dd><a href="" target="_blank">FaceBook</a><dd>
+          <dd><a href="" target="_blank">WeChat</a><dd>
+          <dd><a href=""> EmailMe</a><dd>
+        </dl>
+      </div>
+
+    </div>
+    </div>
+  
+</div>
+
+<div class="fly-footer">
+  <p><a href="http://fly.layui.com/" target="_blank">Qike Yan</a> 2019 &copy; </p>
+</div>
+
+ 
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+ 
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Qike's Blog</title>
+  <link rel="stylesheet" href="./res/layui/css/layui.css">
+  <link rel="stylesheet" href="./res/css/global.css">
+  <style>
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+  .panel p h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  </style>
+</head>
+<body>
+
+<div class="fly-header layui-bg-black">
+  <div class="layui-container">
+    <img src="./res/images/nameLogo.png" style=" margin-top : 5px;float: right;width: 50px;height: 50px;">
+    <br>
+    <h1>Qike's NoteBook Share</h1>
+  </div>
+</div>
+
+<div class="fly-panel fly-column">
+  <div class="layui-container">
+    <ul class="layui-clear">
+      <li class="layui-hide-xs layui-this"><a href="./index.html">Home</a></li> 
+      <li><a href="./InterviewPreparation.html">Interview Preparation</a></li> 
+      <li><a href="./DailyNoteSummary.html">Daily Note Summary</a></li> 
+      <li><a href="./PersonalNote.html">Personal note</a></li> 
+      <li><a href="./QuestionList.html">Questions Category</a></li>     
+    </ul> 
+  </div>
+</div>
+
+<div class="layui-container">
+  <div class="layui-row layui-col-space15">
+
+    <div class="layui-col-md8">
+      <div class="fly-panel">
+        <div class="fly-panel-title fly-filter">
+          <h1> LeetCode Question To-do Plan </h1>         
+        </div>
+        <div class="fly-list">
+          <div class="fly-panel-main">
+            <p>All Categories List</p>
+            <br>
+            <button class="accordion">Basic Logic(17)</button>
+            <div class="panel">
+              <h2>plan 1</h2>
+              <p>Summary Ranges - easy</p>
+              <p>Island Perimeter - easy</p>
+              <p>Missing Ranges - medium</p>
+              <p>Excel Sheet Column Number - easy</p>
+              <p>Excel Sheet Column Title - easy</p>
+
+              <h2>plan 2</h2>
+              <p>Next Permutation - medium</p>
+              <p>Next Greater Element III - medium</p>
+              <p>Permutation Sequence - medium</p>
+              <p>Maximum Swap - medium</p>
+              <p>Valid Sudoku - medium</p>
+              <p>Game of Life - medium</p>
+              <p>Bulls and Cows - medium</p>
+              <p>Find the Closest Palindrome - hard</p>
+
+              <h2>plan 3</h2>
+              <p>Strobogrammatic Number - medium</p>
+              <p>Strobogrammatic Number II - medium</p>
+              <p>Strobogrammatic Number III - hard</p>
+              <p>Maximum Distance in Arrays - easy</p>
+            </div>
+
+            <button class="accordion">Binary Search(22)</button>
+            <div class="panel">
+              <h2>plan 1 (basic operation)</h2>
+              <p>Find Smallest Letter Greater Than Target - easy</p>
+              <p>Search Insert Position - easy</p>
+              <p>First Bad Version - easy</p>
+              <p>Search for a Range - medium</p>
+              <p>Find Minimum in Rotated Sorted Array - medium</p>
+              <p>Find Minimum in Rotated Sorted Array II - medium</p>
+              <p>Search in Rotated Sorted Array - medium</p>
+              <p>Search in Rotated Sorted Array II - medium</p>
+
+              <h2>plan 2</h2>
+              <p>Single Element in a Sorted Array - medium</p>
+              <p>Find Peak Element - medium</p>
+              <p>Find Right Interval - medium</p>
+              <p>H-Index II - medium</p>
+              <p>Sort Transformed Array - medium</p>
+              <p>Search a 2D Matrix - medium</p>
+              <p>Search a 2D Matrix II - medium</p>
+
+              <h2>plan 3</h2>
+              <p>Divide Two Integers - medium</p>
+              <p>Sqrt(x) - medium</p>
+              <p>Median of Two Sorted Arrays - hard</p>
+              <p>Find K Closest Elements - hard</p>
+              <p>Smallest Rectangle Enclosing Black Pixels - medium</p>
+              <p>Count Complete Tree Nodes - medium</p>
+              <p>Find the Duplicate Number - hard</p>
+              <p>Split Array Largest Sum - hard</p>
+
+            </div>
+
+            <button class="accordion">Array(42) </button>
+            <div class="panel">
+              <h2>Plan 0 - coding</h2>
+              <p>Toeplitz Matrix - easy</p>
+              <p>Diagonal Traverse - medium</p>
+              <p>Rotate Image - medium</p>
+              <p>Spiral Matrix - medium</p>
+              <p>Spiral Matrix II - medium</p>
+              <br>
+              <h2>Plan 1 - Two Pointers</h2>
+              <p>Two Sum - easy</p>
+              <p>Two Sum II - Input array is sorted - easy</p>
+              <p>3Sum - medium</p>
+              <p>3Sum Closest - medium</p>
+              <p>3Sum Smaller - medium</p>
+              <p>4Sum - medium</p>
+              <p>4Sum II - hard</p>
+              <p>Valid Triangle Number - medium</p>
+              <p>K-diff Pairs in an Array - easy</p>
+              <br>
+
+              <h2>Plan 2 - partition</h2>
+              <p>Rotate Array - easy - Basic</p>
+              <p>Move Zeroes - easy</p>
+              <p>Sort Colors - medium</p>
+              <p>Remove Element - easy</p>
+              <p>Remove Duplicates from Sorted Array - easy</p>
+              <p>Remove Duplicates from Sorted Array II - medium</p>
+              <br>
+
+              <h2>Plan 3 - Move the smaller one</h2>
+              <p>Merge Sorted Array - easy - Basic</p>
+              <p>Intersection of Two Arrays - easy</p>
+              <p>Intersection of Two Arrays II - easy</p>
+              <br>
+              <h2>Plan 4 - Expand from the center</h2>
+              <p>Product of Array Except Self - easy (not so easy )</p>
+              <p>Trapping Rain Water - medium</p>
+              <p>Increasing Triplet Subsequence - easy</p>
+              <p>132 Pattern - medium</p>
+              <br>
+              <h2>Plan 5 - prefix sum2</h2>
+              <p>Range Sum Query - Immutable - easy</p>
+              <p>Range Sum Query 2D - Immutable - medium
+              <p>Subarray Sum Equals K - medium</p>
+              <p>Maximum Size Subarray Sum Equals k - medium</p>
+              <p>Minimum Size Subarray Sum - hard - two pointers</p>
+              <p>Contiguous Array - medium</p>
+              <p>Continuous Subarray Sum - medium</p>
+              <p>Split Array with Equal Sum - medium </p>
+              <br>
+              <h2>Plan 6</h2>
+              <p>Wiggle Sort - medium</p>
+              <p>Wiggle Sort II - hard</p>
+              <p>Pascal's Triangle - easy</p>
+              <p>Pascal's Triangle II - medium</p>
+              <p>H-Index - medium</p>
+              <p>First Missing Positive - hard</p>
+              <p>Max Chunks To Make Sorted II - medium/p></p>
+            </div>
+
+            <button class="accordion">Linked List - Coding(25)</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">HashMap(8)</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">String(50)</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">Tree(60)</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">Binary Search Tree(17)</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">DFS Backtracking(34)</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">Graph Traversal - DFS, BFS(21)</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">DP (53)</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">DP - String Match(9)</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">DP - Matrix(11)</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">Intervals(3)</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">Sweep Line(7)</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">Bit Operation(8)</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">Design + Data Structure(8)</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">Geometry(4)</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+
+
+
+      
+          </div>
+           
+        </div>
+      </div>   
+  </div>
+
+
+  <div class="layui-col-md4">
+
+      <div class="fly-panel">
+        <h3 class="fly-panel-title">Hot Question List</h3>
+        <ul class="fly-panel-main fly-list-static">
+          <li>
+            <a href="" target="_blank">Two Sum Question</a>
+          </li>
+          <li>
+            <a href="" target="_blank">
+              Three Sum Question
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank">Four Sum Question</a>
+          </li>
+          <li>
+            <a href="" target="_blank">
+              Find the LCA in Tree
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+        </ul>
+      </div>
+    
+      <div class="fly-panel fly-link">
+        <h3 class="fly-panel-title">Friend Connect/LinkedIn Connect</h3>
+        <dl class="fly-panel-main">
+          <dd><a href="https://github.com/QikeYan" target="_blank">GitHub</a><dd>
+          <dd><a href="https://www.linkedin.com/in/qike-yan-27353a163/" target="_blank">LinkedIn</a><dd>
+          <dd><a href="" target="_blank">FaceBook</a><dd>
+          <dd><a href="" target="_blank">WeChat</a><dd>
+          <dd><a href=""> EmailMe</a><dd>
+        </dl>
+      </div>
+
+    </div>
+</div>
+
+<div class="fly-footer">
+  <p>Qike Yan 2019 &copy; </p>
+</div>
+ <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+   
+ </script>
+
+</body>
+</html>

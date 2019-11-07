@@ -1,0 +1,213 @@
+ 
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Qike's Blog</title>
+  <link rel="stylesheet" href="./res/layui/css/layui.css">
+  <link rel="stylesheet" href="./res/css/global.css">
+</head>
+<body>
+
+<div class="fly-header layui-bg-black">
+  <div class="layui-container"><br>
+    <h1>Qike's NoteBook Share</h1>
+  </div>
+</div>
+
+<div class="fly-panel fly-column">
+  <div class="layui-container">
+    <ul class="layui-clear">
+      <li class="layui-hide-xs layui-this"><a href="./index.html">Home</a></li> 
+      <li><a href="./InterviewPreparation.html">Interview Preparation</a></li> 
+      <li><a href="./DailyNoteSummary.html">Daily Note Summary</a></li> 
+      <li><a href="./PersonalNote.html">Personal note</a></li> 
+      <li><a href="./QuestionList.html">Questions Category</a></li> 
+   
+      <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><span class="fly-mid"></span></li> 
+     
+    </ul> 
+  </div>
+</div>
+
+<div class="layui-container">
+  <div class="layui-row layui-col-space15">
+    <div class="layui-col-md8">
+      <div class="fly-panel">
+        <div class="fly-panel-title fly-filter">
+          <a>Degree of an Array </a>         
+        </div>
+        <div class="fly-list">
+          <div class="fly-panel-main">
+            <p>testing</p>
+            <br>
+            <p> Input: [1, 2, 2, 3, 1]<br>
+            Output: 2<br>
+            Explanation: 
+            The input array has a degree of 2 because both elements 1 and 2 appear twice.
+            Of the subarrays that have the same degree:
+            [1, 2, 2, 3, 1], [1, 2, 2, 3], [2, 2, 3, 1], [1, 2, 2], [2, 2, 3], [2, 2]
+            The shortest length is 2. So return 2.
+            </p>
+            <br>
+            <p>The problem I meet</p>
+            <br>
+            <p>
+              1. how to find the degree of this array? what if there are more than one element contribute to the max degree of this array?
+            </p>
+            <br>
+            <p>
+              2.how to find the first occurence and the last occurence of one element inside an unsorted array? (It’s pretty clear that we could use binaray search if the array is sorted)
+            </p>
+            <br>
+            <h2>
+              Solutions:
+            </h2>
+            <br>
+            <p>
+              For Question 1:
+            </p>
+            <br>
+            <p>
+              we could use a HashMap to count the frequence of each element. Then using the belowe function to get the degree
+int degree = Collections.max(count.values());
+we don’t matter how many elements qualified, but we only care the degree which is the maximum number of all values
+
+            </p>
+            <br>
+            <p>For Question 2:</p>
+            <br>
+            <p>
+              
+
+we use two HashMap left and right to record the first  occur and the last occur. since we record this based on the current value which is the key indeed. so we use hashMap which is perfect for put and get based on element.
+
+            </p>
+<h2> CODE HERE</h2>
+  <pre>   
+    <code class="hljs java">
+      Map<Integer, Integer> left = new HashMap<>();
+      Map<Integer, Integer> right = new HashMap<>();
+     Map<Integer, Integer> count = new HashMap<>();
+     for(int i = 0; i < nums.length; i++){
+              int x = nums[i];
+            if(left.get(x) == null) left.put(x,i);
+            right.put(x,i);
+            count.put(x,count.getOrDefault(x,0) +1);
+        }
+         int res = nums.length;
+         int degree = Collections.max(count.values());
+         for(int x : count.keySet()){
+             if(count.get(x) == degree){
+                 res = Math.min(res,right.get(x) - left.get(x) +1);
+             }
+         }        
+        return res;        
+    }     
+    </code>
+  </pre>
+  <p>Another Solution</p>
+<pre>
+  <code class="hljs java">     
+
+if (nums.length == 0 || nums == null) return 0;
+        Map<Integer, int[]> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++){
+           if (!map.containsKey(nums[i])){
+               map.put(nums[i], new int[]{1, i, i});  // the first element in array is degree, second is first index of this key, third is last index of this key
+           } else {
+               int[] temp = map.get(nums[i]);
+               temp[0]++;
+               temp[2] = i;
+           }
+        }
+        int degree = Integer.MIN_VALUE, res = Integer.MAX_VALUE;
+        for (int[] value : map.values()){
+            if (value[0] > degree){
+                degree = value[0];
+                res = value[2] - value[1] + 1;
+            } else if (value[0] == degree){
+                res = Math.min( value[2] - value[1] + 1, res);
+            } 
+        }
+        return res;
+    }
+
+  </code>
+</pre>
+
+          </div>
+           
+        </div>
+      </div>   
+  </div>
+  <div class="layui-col-md4">
+
+      <div class="fly-panel">
+        <h3 class="fly-panel-title">Question List</h3>
+        <ul class="fly-panel-main fly-list-static">
+          <li>
+            <a href="" target="_blank">Two Sum Question</a>
+          </li>
+          <li>
+            <a href="" target="_blank">
+              Three Sum Question
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank">Four Sum Question</a>
+          </li>
+          <li>
+            <a href="" target="_blank">
+              Find the LCA in Tree
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Sprial Matrix</a>
+          </li>
+        </ul>
+      </div>
+    
+      <div class="fly-panel fly-link">
+        <h3 class="fly-panel-title">Friend Connect/LinkedIn Connect</h3>
+        <dl class="fly-panel-main">
+          <dd><a href="https://github.com/QikeYan" target="_blank">GitHub</a><dd>
+          <dd><a href="https://www.linkedin.com/in/qike-yan-27353a163/" target="_blank">LinkedIn</a><dd>
+          <dd><a href="" target="_blank">FaceBook</a><dd>
+          <dd><a href="" target="_blank">WeChat</a><dd>
+          <dd><a href=""> EmailMe</a><dd>
+        </dl>
+      </div>
+
+    </div>
+</div>
+
+<div class="fly-footer">
+  <p>Qike Yan 2019 &copy; </p>
+</div>
+ 
+
+</body>
+</html>
